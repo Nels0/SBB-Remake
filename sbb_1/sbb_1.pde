@@ -4,6 +4,7 @@ int balls = 1;
 int xcBlocks = 6;
 int ycBlocks = 10;
 int xSize, ySize;
+float xPartStart,yPartStart; 
 
 void setup() {
   size(600,800);
@@ -11,12 +12,13 @@ void setup() {
   ySize = height;
   textSize(20);
   newround();
-
+  xps = width/2;
+  yPartStart = ySize - 100;
 }
 
 void draw(){
   background(255);
-
+  cursor(CROSS);
   for (Block b: blocks){
     b.updateBlock();
     //println("Drew block " + b + " at xPos " + b.xPos + " and yPos " + b.yPos);
