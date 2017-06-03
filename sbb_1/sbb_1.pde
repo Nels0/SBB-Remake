@@ -12,7 +12,7 @@ void setup() {
   ySize = height;
   textSize(20);
   newround();
-  xps = width/2;
+  //xps = width/2;
   yPartStart = ySize - 100;
 }
 
